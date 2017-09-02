@@ -12,7 +12,7 @@
     "chokidar": "^1.7.0",
     "debounce-queue": "^0.2.0",
     "fs-extra": "^4.0.1",
-    "require-global-node-module": "laggingreflex/require-global-node-module",
+    "require-global-node-module": "1.1.0",
     "yargs": "^8.0.2"
   }
 }
