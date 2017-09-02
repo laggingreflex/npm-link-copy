@@ -35,7 +35,7 @@ One downside is that you need to run it every time you make changes to `your-awe
 ## Install
 
 ```sh
-npm install -g npm-link-copy
+npm install -g laggingreflex/npm-link-copy
 ```
 
 ## Usage
