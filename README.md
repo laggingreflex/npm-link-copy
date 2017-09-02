@@ -49,6 +49,19 @@ npm-link-copy [..modules] [options]
 * **`--ignored, -i`** `[defalut:['node_modules', '.git']]` Ignored dirs
 
 
+## Libraries used
+
+* [fs-extra]: better `fs`
+* [require-global-node-module]: resolve from `npm root -g`
+* [chokidar]: better `fs.watch`
+* [yargs]: enhanced `process.argv`
+* [debounce-queue] prevent bursts of callbacks
+
 <Links/>
 
 [npm link]: https://docs.npmjs.com/cli/link
+[fs-extra]: https://github.com/jprichardson/node-fs-extra
+[require-global-node-module]: http://github.com/sdgluck/require-global-node-module
+[chokidar]: https://github.com/paulmillr/chokidar/
+[yargs]: https://github.com/yargs/yargs
+[debounce-queue]: https://github.com/laggingreflex/debounce-queue/
