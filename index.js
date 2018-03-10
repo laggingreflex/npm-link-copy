@@ -16,6 +16,7 @@ const argv = yargs.options({
 	watch: {type: "boolean", alias: "w"},
 	ignored: {type: "string", alias: "i", default: ["node_modules", ".git"]},
 	verbose: {type: "boolean", alias: "v"},
+	clearInitially: {type: "boolean", alias: "c"},
 }).argv;
 
 const log = (...msg) => console.log("[nlc]", ...msg);
@@ -31,6 +32,9 @@ argv._.forEach(moduleName => {
 	const modulePath = globalRequire.resolve(moduleName);
 	const localModulePath = path.join(cwd, "node_modules", moduleName);
 	
+	if (argv.clearInitially) {
+		rimraf.sync(localModulePath);
+	}
 	shelljs.mkdir("-p", localModulePath);
 	
 	const watcher = chokidar.watch(modulePath, {

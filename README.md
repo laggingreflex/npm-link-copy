@@ -52,7 +52,9 @@ npm-link-copy [..modules] [options]
 ```
 
 * **`--watch, -w`** Watch for changes
-* **`--ignored, -i`** `[defalut:['node_modules', '.git']]` Ignored dirs
+* **`--ignored, -i`** `[default:['node_modules', '.git']]` Ignored dirs
+* **`--clearInitially, -c`** Clears the target directory initially.
+* **`--verbose, -v`** Log every file and directory operation that's done.
 
 
 ## Libraries used
@@ -62,6 +64,8 @@ npm-link-copy [..modules] [options]
 * [chokidar]: better `fs.watch`
 * [yargs]: enhanced `process.argv`
 * [debounce-queue] prevent bursts of callbacks
+* [rimraf] delete directory recursively
+* [shelljs] copy, mkdir, ...
 
 <Links/>
 
