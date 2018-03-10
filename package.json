@@ -13,6 +13,8 @@
     "debounce-queue": "^0.2.0",
     "fs-extra": "^4.0.1",
     "require-global-node-module": "1.1.0",
+    "rimraf": "^2.6.2",
+    "shelljs": "^0.8.1",
     "yargs": "^8.0.2"
   }
 }
