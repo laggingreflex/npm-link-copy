@@ -2,6 +2,12 @@
 
 Alternative to [npm link] that works by copying files instead of linking.
 
+## Why this fork?
+
+This fork is based on laggingreflex's package. That one is great, but it only supports listening to file changes in the watch mode.
+This is fixed here: the tool now watches for adding, removing and renaming files and directories.
+
+
 ## Why?
 
 Suppose you have the following setup:
@@ -35,7 +41,7 @@ One downside is that you need to run it every time you make changes to `your-awe
 ## Install
 
 ```sh
-npm install -g laggingreflex/npm-link-copy
+npm install -g blissi/npm-link-copy
 ```
 
 ## Usage
