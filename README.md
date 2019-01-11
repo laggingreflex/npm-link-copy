@@ -1,3 +1,5 @@
+**DEPRECATED: Please use [npm-link-better](https://github.com/laggingreflex/npm-link-better)**
+
 # npm-link-copy
 
 Alternative to [npm link] that works by copying files instead of linking.
