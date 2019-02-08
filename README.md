@@ -4,6 +4,12 @@
 
 Alternative to [npm link] that works by copying files instead of linking.
 
+## Why this fork?
+
+This fork is based on laggingreflex's package. That one is great, but it only supports listening to file changes in the watch mode.
+This is fixed here: the tool now watches for adding, removing and renaming files and directories.
+
+
 ## Why?
 
 Suppose you have the following setup:
@@ -37,7 +43,7 @@ One downside is that you need to run it every time you make changes to `your-awe
 ## Install
 
 ```sh
-npm install -g laggingreflex/npm-link-copy
+npm install -g blissi/npm-link-copy
 ```
 
 ## Usage
@@ -48,7 +54,9 @@ npm-link-copy [..modules] [options]
 ```
 
 * **`--watch, -w`** Watch for changes
-* **`--ignored, -i`** `[defalut:['node_modules', '.git']]` Ignored dirs
+* **`--ignored, -i`** `[default:['node_modules', '.git']]` Ignored dirs
+* **`--clearInitially, -c`** Clears the target directory initially.
+* **`--verbose, -v`** Log every file and directory operation that's done.
 
 
 ## Libraries used
@@ -58,6 +66,8 @@ npm-link-copy [..modules] [options]
 * [chokidar]: better `fs.watch`
 * [yargs]: enhanced `process.argv`
 * [debounce-queue] prevent bursts of callbacks
+* [rimraf] delete directory recursively
+* [shelljs] copy, mkdir, ...
 
 <Links/>
 
